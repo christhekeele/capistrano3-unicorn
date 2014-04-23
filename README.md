@@ -36,10 +36,6 @@ You can override the defaults by `set :unicorn_example, value` in the `config/de
 
     Set the RACK_ENV. Defaults to deployment unless the RAILS_ENV is development. Valid options are "development", "deployment", or "none". See the [RACK ENVIRONMENT](http://unicorn.bogomips.org/unicorn_1.html) section of the unicorn documentation for more information.
 
-- `:unicorn_bundle_gemfile`
-
-    Sets the BUNDLE_GEMFILE so that unicorn will point at the new Gemfile after unicorn:restart. Defaults to `current/Gemfile`.
-
 ### Setup
 
 Add the library to your `Gemfile`:
