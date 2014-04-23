@@ -4,7 +4,7 @@ namespace :load do
     set :unicorn_config_path, -> { current_path.join('config', 'unicorn', "#{fetch(:rails_env)}.rb") }
     set :unicorn_roles, -> { :app }
     set :unicorn_options, ''
-    set :unicorn_rack_env, -> { fetch(:rails_env) == 'development' ? 'development' : 'deployment' }
+    set :unicorn_rack_env, 'none'
   end
 end
 
